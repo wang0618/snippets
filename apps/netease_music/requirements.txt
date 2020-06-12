@@ -1,0 +1,3 @@
+https://github.com/0xHJK/music-dl/archive/v3.0.0.zip
+mutagen
+requests
