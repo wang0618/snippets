@@ -1,6 +1,9 @@
 from os import path
 
 from music_dl import config
+
+config.init()
+
 from music_dl.addons.netease import netease_single
 
 from lib.music.music_api import get_lyric, get_cover
@@ -10,7 +13,6 @@ import argparse
 
 
 def download(url, output):
-    config.init()
     config.set("cover", False)
     config.set("lyrics", False)
     config.set("verbose", True)

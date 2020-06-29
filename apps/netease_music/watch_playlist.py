@@ -3,6 +3,10 @@
 
 通过输出目录下的 last_download_id.log 文件记录已经下载好的歌单最新歌曲id
 """
+from music_dl import config
+
+config.init()
+
 import argparse
 from os import path
 from music_dl.addons.netease import netease_playlist
