@@ -51,7 +51,7 @@ def get_lyric(id, include_trans=True):
                      headers=netease_headers)
     res = r.json()
     # print(res)
-    if res.get('nolyric'):
+    if res.get('nolyric') or not res.get('lrc', {}).get('lyric'):
         return [], ''
 
     lrc_text = res['lrc']['lyric'].strip()
@@ -95,5 +95,5 @@ def get_cover(id):
 if __name__ == '__main__':
     # s = search('CANNIE(晴子)')
     # print(s)
-    lrc = get_lyric('28396861')
+    lrc = get_lyric('1398274521')
     print(lrc)
