@@ -20,7 +20,7 @@ python3 xxx.py --help
 
 ## 应用目录
  
- - [netease_music](./app/netease_music): 网易云音乐单曲下载，并补全 MP3 tag (基本信息和歌词)
+ - [netease_music](./apps/netease_music/): 网易云音乐单曲下载，并补全 MP3 tag (基本信息和歌词)
 
 ## Library目录
 
